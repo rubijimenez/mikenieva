@@ -67,10 +67,10 @@
                                 <header id="header">
                                     <a href="{{@blog.url}}" class="logo"><strong>Mike</strong> Nieva</a>
                                     <ul class="icons">
-                                        <li><a href="http://twitter.com/mikenieva" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="http://facebook.com/mikenieva" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                                        <li><a href="http://instagram.com/mikenieva" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="http://medium.com/@mikenieva" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                                        <li><a target="_blank" href="http://twitter.com/mikenieva" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a target="_blank" href="http://facebook.com/mikenieva" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                        <li><a target="_blank" href="http://instagram.com/mikenieva" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a target="_blank" href="http://medium.com/@mikenieva" class="icon fa-medium"><span class="label">Medium</span></a></li>
                                     </ul>
                                 </header>
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
@@ -82,41 +82,42 @@
                     <div id="sidebar">
                         <div class="inner">
 
-                            <!-- Search -->
+                            <!-- Search 
                                 <section id="search" class="alt">
                                     <form method="post" action="#">
                                         <input type="text" name="query" id="query" placeholder="Search" />
                                     </form>
                                 </section>
+                                -->
 
                             <!-- Menu -->
                                 <nav id="menu">
                                     <header class="major">
-                                        <h2>Menu</h2>
+                                        <h2>Menú</h2>
                                     </header>
                                     <ul>
                                         <li><a href="{{@blog.url}}">Inicio</a></li>
-                                        <li><a href="generic.html">Educación</a></li>
-                                        <li><a href="elements.html">Tecnología Web</a></li>
-                                        <li><a href="elements.html">Comunidades</a></li>
+                                        <li><a href="{{@blog.url}}/tag/educacion">#Educación</a></li>
+                                        <li><a href="{{@blog.url}}/tag/tecnologia">#Tecnología Web</a></li>
+                                        <li><a href="{{@blog.url}}/tag/comunidades">#Comunidades</a></li>
                                         <li>
                                             <span class="opener">Cursos Online</span>
                                             <ul>
                                                 <li><a href="http://tabuniversity.com/marcapersonal">Clase Maestra de Marca Personal</a></li>
-                                                <li><a href="#">Tácticas de Ventas para Principiantes</a></li>
-                                                <li><a href="#">Curso de Git y GitHub</a></li>
+                                                <li><a href="http://tabuniversity.com/ventas">Tácticas de Ventas para Principiantes</a></li>
+                                                <li><a href="http://platzi.com/git">Curso de Git y GitHub</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <span class="opener">Mis Empresas</span>
                                             <ul>
-                                                <li><a href="#">TAB University</a></li>
-                                                <li><a href="#">Conexión Web</a></li>
+                                                <li><a target="_blank" href="http://tabuniversity.com">TAB University</a></li>
+                                                <!--<li><a href="#">Conexión Web</a></li>-->
                                             </ul>
                                         </li>
-                                        <li><a href="elements.html">Eventos</a></li>
-                                        <li><a href="#">Podcast</a></li>
-                                        <li><a href="#">#ConversandoConUnLatte</a></li>
+                                        <li><a target="_blank" href="https://www.facebook.com/pg/mikenieva/events/" target="_blank">Eventos</a></li>
+                                        <li><a target="_blank" href="https://soundcloud.com/mikenieva">Podcast</a></li>
+                                        <li><a class="icon fa-coffee" href="#" target="_blank">&nbsp; #ConversandoConUnLatte</a></li>
                                     </ul>
                                 </nav>
 
@@ -147,12 +148,12 @@
                              -->
                                 <section>
                                     <header class="major">
-                                        <h2>Invitaciones. Contacto.</h2>
+                                        <h2>Contacto</h2>
                                     </header>
                                     <ul class="contact">
-                                        <li class="fa-envelope-o"><a href="mailto:m@mikenieva.com">m@mikenieva.com</a></li>
+                                        <li class="fa-envelope-o"><a target="_blank" href="mailto:mn@mikenieva.com">mn@mikenieva.com</a></li>
                                         <li class="fa-whatsapp">+52 (1) 55 30 73 82 20</li>
-                                        <li class="fa-linkedin"><a href="http://www.linkedin.com/in/mikenieva">Mike Nieva</a></li>
+                                        <li class="fa-linkedin"><a target="_blank" href="http://www.linkedin.com/in/mikenieva">Mike Nieva</a></li>
                                     </ul>
                                 </section>
 

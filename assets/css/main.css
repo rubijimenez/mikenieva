@@ -4062,3 +4062,9 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+
+.post-content img {
+
+	width: 100%;
+}
