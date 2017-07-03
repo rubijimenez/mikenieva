@@ -1,0 +1,110 @@
+{{!< default}}
+
+{{#contentFor "meta"}}
+    <meta property="og:url" content="{{@blog.url}}" />
+    <meta property="og:title" content="Mike Nieva - Educational Technologist" />
+    <meta property="og:site_name" content="{{@blog.title}}" />
+    <meta property="og:image" content="http://i.imgur.com/JdL6F6h.jpg" />
+    <meta property="og:description" content="Impulsando vidas profesionales a través de Internet."/>
+    <meta property="fb:profile_id" content="mikenieva" />
+    <meta property="fb:admins" content="mikenieva" />
+    <meta property="fb:pages" content="285521064948889" />
+{{/contentFor}}
+
+                            <!-- Banner -->
+                                <section id="banner">
+                                    <div class="content">
+                                        <header>
+                                            <h1>Un gusto. Soy Mike Nieva.<br /></h1>
+                                            <p>Educación | Tecnología Web | Comunidades</p>
+                                        </header>
+                                        <p>Conectando e impulsando vidas profesionales a través de Internet.</p>
+                                        <ul class="actions">
+                                            <li><a href="#" class="button big"><span class="icon fa-whatsapp"></span>&nbsp;&nbsp; Charlemos vía WhatsApp</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="image object">
+                                        <img src="http://i.imgur.com/JdL6F6h.jpg" alt="" />
+                                    </span>
+                                </section>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2>Encuéntrame en:</h2>
+                                    </header>
+                                    <div class="features">
+                                        <article>
+                                            <span class="icon fa-users"></span>
+                                            <div class="content">
+                                                <h3><a href="http://wwww.tabuniversity.com">TAB University</a></h3>
+                                                <b>"Comunidad de Alto Desempeño"</b> donde conversamos y enseñamos sobre desarrollo profesional.
+                                                <br>
+                                                <br>
+                                                Inicia con mi <a target="_blank" href="http://tabuniversity.com/ventas">Curso de Tácticas de Ventas.</a>
+                                                <br>
+                                            </p>
+                                            </div>
+                                        </article>
+                                                  <article>
+                                            <span class="icon fa-tv"></span>
+                                            <div class="content">
+                                                <h3><a href="http://wwww.platzi.com">Platzi</a></h3>
+                                                <p>Expertos en programación, diseño, marketing, startups, video y web. Educación Online Efectiva.
+                                                <br>
+                                                <br>
+                                                Conoce mi <a href="http://platzi.com/git" target="_blank">Curso de Git y GitHub.</a>
+
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span class="icon fa-video-camera"></span>
+                                            <div class="content">
+                                                <h3>Conexión Web</h3>
+                                                Transmisiones en vivo para universidades y su gestión social.
+                                                <br>
+                                                <br>
+                                                Conoce uno de nuestros <a target="_blank" href="http://facebook.com/iberopueblalive">clientes.</a>
+                                                <br>
+                                            </div>
+                                        </article>
+                               
+                                        <article>
+                                            <span class="icon fa-pencil-square-o"></span>
+                                            <div class="content">
+                                                <h3>Medium</h3>
+                                                <p>Mis artículos en inglés y los más populares.
+                                                <br>
+                                                <br>
+                                                Sígueme <a href="http://medium.com/mikenieva">aquí.</a>
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2>Nuevos Artículos</h2>
+                                    </header>
+
+
+<div class="posts">
+{{!-- This is the post loop - each post will be output using this markup --}}
+{{#foreach posts}}
+<article class="{{post_class}}">
+    <a href="{{url}}" class="image"><img src="{{image}}" alt="" /></a>
+        <h3 class="post-title"><a href="{{url}}">{{title}}</a></h3>
+        <p>{{excerpt words="26"}}</p>
+        <ul class="actions">
+            <li><a href="{{url}}" class="button">Sigue leyendo</a></li>
+        </ul>
+</article>
+{{/foreach}}
+
+</div>
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

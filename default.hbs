@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {{!-- Document Settings --}}
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        {{!-- Page Meta --}}
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}" />
+
+        {{!-- Mobile Meta --}}
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+        {{!-- Brand icon --}}
+        <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+
+        {{!-- Styles'n'Scripts --}}
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+        {{!-- Ghost outputs important style and meta data with this tag --}}
+        {{ghost_head}}
+
+
+<!-- - Facebook JS SKD
+============================== -->
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '753203161390474',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- ============================== -->
+
+    </head>
+    <body class="{{body_class}} nav-closed">
+
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+
+                            <!-- Header -->
+                                <header id="header">
+                                    <a href="{{@blog.url}}" class="logo"><strong>Mike</strong> Nieva</a>
+                                    <ul class="icons">
+                                        <li><a href="http://twitter.com/mikenieva" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="http://facebook.com/mikenieva" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                        <li><a href="http://instagram.com/mikenieva" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="http://medium.com/@mikenieva" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                                    </ul>
+                                </header>
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+                            {{{body}}}
+                        </div>
+                    </div>
+
+                <!-- Sidebar -->
+                    <div id="sidebar">
+                        <div class="inner">
+
+                            <!-- Search -->
+                                <section id="search" class="alt">
+                                    <form method="post" action="#">
+                                        <input type="text" name="query" id="query" placeholder="Search" />
+                                    </form>
+                                </section>
+
+                            <!-- Menu -->
+                                <nav id="menu">
+                                    <header class="major">
+                                        <h2>Menu</h2>
+                                    </header>
+                                    <ul>
+                                        <li><a href="{{@blog.url}}">Inicio</a></li>
+                                        <li><a href="generic.html">Educación</a></li>
+                                        <li><a href="elements.html">Tecnología Web</a></li>
+                                        <li><a href="elements.html">Comunidades</a></li>
+                                        <li>
+                                            <span class="opener">Cursos Online</span>
+                                            <ul>
+                                                <li><a href="http://tabuniversity.com/marcapersonal">Clase Maestra de Marca Personal</a></li>
+                                                <li><a href="#">Tácticas de Ventas para Principiantes</a></li>
+                                                <li><a href="#">Curso de Git y GitHub</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="opener">Mis Empresas</span>
+                                            <ul>
+                                                <li><a href="#">TAB University</a></li>
+                                                <li><a href="#">Conexión Web</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="elements.html">Eventos</a></li>
+                                        <li><a href="#">Podcast</a></li>
+                                        <li><a href="#">#ConversandoConUnLatte</a></li>
+                                    </ul>
+                                </nav>
+
+<!-- Instagram
+
+                                <section>
+                                    <header class="major">
+                                        <h2>Instagram</5h2>
+                                    </header>
+                                    <div class="mini-posts">
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                        </article>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><a href="#" class="button">More</a></li>
+                                    </ul>
+                                </section>
+                             -->
+                                <section>
+                                    <header class="major">
+                                        <h2>Invitaciones. Contacto.</h2>
+                                    </header>
+                                    <ul class="contact">
+                                        <li class="fa-envelope-o"><a href="mailto:m@mikenieva.com">m@mikenieva.com</a></li>
+                                        <li class="fa-whatsapp">+52 (1) 55 30 73 82 20</li>
+                                        <li class="fa-linkedin"><a href="http://www.linkedin.com/in/mikenieva">Mike Nieva</a></li>
+                                    </ul>
+                                </section>
+
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <p class="copyright">&copy; The Mike Nieva Company. Todos los derechos reservados.</p>
+                                </footer>
+
+                        </div>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+
+        {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        {{!-- Ghost outputs important scripts and data with this tag --}}
+        {{ghost_foot}}
+        {{!-- Fitvids makes video embeds responsive and awesome --}}
+        <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+        {{!-- The main JavaScript file for Casper --}}
+        <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+            <script src="{{asset "js/skel.min.js"}}"></script>
+            <script src="{{asset "js/util.js"}}"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="{{asset "js/main.js"}}"></script>
+
+    </body>
+</html>
