@@ -4068,3 +4068,14 @@
 
 	width: 100%;
 }
+
+.post-content {
+	padding: 1em; 
+	padding-left:5em;
+	padding-right:5em;
+
+}
+
+.post-content p {
+	font-size: 1.2em;
+}
