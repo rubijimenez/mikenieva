@@ -4070,10 +4070,8 @@
 }
 
 .post-content {
-	padding: 1em; 
-	padding-left:5em;
-	padding-right:5em;
-
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .post-content p {
