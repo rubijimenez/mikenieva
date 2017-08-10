@@ -7,7 +7,7 @@
             <meta property="og:title" content="{{title}} - Mike Nieva" />
             <meta property="og:site_name" content="{{@blog.title}}" />
             <meta property="og:description" content="{{excerpt characters="220"}}..."/>
-            <meta property="og:image" content="{{@blog.url}}{{img_url feature_image}}">
+            <meta property="og:image" content="{{@blog.url}}{{image}}">
             <meta property="article:author" content="https://facebook.com/mikenieva" />
             <meta property="article:published_time" content="{{date format="YYYY-MM-DD"}}" />{{#foreach tags}}
             <meta property="article:tag" content="{{name}}" />{{/foreach}}
@@ -19,7 +19,7 @@
         <header class="main">
             <h1>{{title}}</h1>
         </header>
-        <span class="image main"><img src="{{img_url feature_image}}" alt="" /></span>
+        <span class="image main"><img src="{{image}}" alt="" /></span>
 
         <div class="block-socialbuttons">
             <div class="socialbutton facebookbutton" style="text-align:center; margin-bottom: 50px; margin-top: 25px;">
